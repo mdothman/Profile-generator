@@ -174,7 +174,66 @@ function generateHTML(data) {
         
         <body>
         
+        <div class="wrapper">
+        <header>
+        <div class="photo-header">
+          <img src="${data.profilePic}" alt="biopic">
+          <h1>Muhi-Dean Othman</h1>
+          <h5> Present employer ${data.company} </h5>
+          <ul class="links-nav"> 
+            <li class="nav-link"><a href="https://www.google.com/maps/place/${
+              data.location
+            }"><i class="fas fa-location-arrow"></i> ${data.location}</a></li>
+            <li class="nav-link"><a href="${
+              data.profileUrl
+            }"><i class="fab fa-github"></i> GitHub</a></li>
+            <li class="nav-link"><a href="${
+              data.blog
+            }"><i class="fas fa-rss-square"></i> Blog</a></li>
+          </ul>
+        </div>
+     
+        <header>
         
+       
+       
+            <div class="main">
+            
+            <div class="container">
+              
+              <div class="row">
+              <div class="col">
+              <h4>${data.bio}</h4>
+              </div>
+              </div>
+            
+              <div class="row">
+              <div class="col card">
+                <h5>Public Repositories</h5>
+                <h5>${data.repos}</h5>
+              </div>
+              <div class="col card">
+              <h5>GitHub Stars</h5>
+              <h5>${data.starCount}</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col card">
+                <h5>Followers</h5>
+                <h5>${data.followers}</h5>
+              </div>
+              <div class="col card">
+              <h4>Following</h4>
+              <h5>${data.following}</h5>
+              </div>
+            </div>
+            
+       </div>
+       </div>
+       <footer>
+       </footer>
+       
+       </div>
         
         </body>`;
 }

@@ -44,7 +44,7 @@ inquirer.prompt(questions).then(({ github, color }) => {
     axios
       .get(`https://api.github.com/users/${github}/repos`)
       .then(function (res) {
-        console.log(res);
+        // console.log(res);
         let starCount = 0;
         for (let index = 0; index < res.data.length; index++) {
           count = res.data[index].stargazers_count;
